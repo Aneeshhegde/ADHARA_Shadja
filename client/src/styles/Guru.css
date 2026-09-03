@@ -1,0 +1,135 @@
+.guru {
+  padding: 60px 20px;
+  background-color: white;
+}
+
+.guru-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.guru h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.guru-subtitle {
+  text-align: center;
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+}
+
+.guru-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+}
+
+.guru-image {
+  position: relative;
+  width: 100%;
+  max-width: 520px;
+  margin: 0 auto;
+  background-color: #f0f0f0;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.guru-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.guru-info h3 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.guru-title {
+  color: var(--secondary-color);
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.guru-details {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.detail-item {
+  padding: 15px;
+  background-color: #f9f7f4;
+  border-left: 4px solid var(--primary-color);
+  border-radius: 4px;
+}
+
+.detail-item h4 {
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+.detail-item p {
+  margin-bottom: 0;
+  font-size: 0.95rem;
+}
+
+.guru-bio,
+.guru-philosophy {
+  margin-bottom: 25px;
+}
+
+.guru-bio h4,
+.guru-philosophy h4 {
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.guru-bio p,
+.guru-philosophy p {
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .guru-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .guru-image {
+    max-width: 420px;
+    min-height: 0;
+  }
+
+  .guru-info h3 {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .guru {
+    padding: 40px 15px;
+  }
+
+  .guru-content {
+    gap: 20px;
+  }
+
+  .detail-item {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+}

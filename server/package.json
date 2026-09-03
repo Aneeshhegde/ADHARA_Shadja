@@ -1,0 +1,29 @@
+{
+  "name": "adhara-shadja-server",
+  "version": "1.0.0",
+  "description": "Backend API for ADHARA SHADJA Gurukula",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "keywords": [
+    "adhara",
+    "shadja",
+    "music",
+    "academy"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-validator": "^7.0.0",
+    "mongoose": "^7.0.0",
+    "razorpay": "^2.9.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
