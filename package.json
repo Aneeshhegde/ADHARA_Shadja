@@ -1,0 +1,11 @@
+{
+  "name": "adhara-shadja",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "install:client": "npm --prefix client install",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "start": "npm --prefix client start",
+    "server": "npm --prefix server start"
+  }
+}
